@@ -1,5 +1,34 @@
 # Changelog
 
+## [4.3.0](https://github.com/mschreib28/cli-printing-press/compare/v4.2.2...v4.3.0) (2026-05-11)
+
+
+### Features
+
+* **cli:** add cliutil.ExtractNumber/ExtractInt for JSON-string-encoded numeric fields ([#1002](https://github.com/mschreib28/cli-printing-press/issues/1002)) ([182395c](https://github.com/mschreib28/cli-printing-press/commit/182395caaa631a5fa7721dc0a6f158c557cd473e)), closes [#989](https://github.com/mschreib28/cli-printing-press/issues/989)
+* **cli:** emit nested-object body fields as parent-prefixed flags ([#957](https://github.com/mschreib28/cli-printing-press/issues/957)) ([ebc8cd8](https://github.com/mschreib28/cli-printing-press/commit/ebc8cd811e5708e4b43e38b36d42719df09b4fe8))
+
+
+### Bug Fixes
+
+* **cli:** allow runtime override of OAuth2 OIDC URLs ([#970](https://github.com/mschreib28/cli-printing-press/issues/970)) ([a9e9d00](https://github.com/mschreib28/cli-printing-press/commit/a9e9d006af266b5b147cd7bd27bd00733be8829d))
+* **cli:** block vendor-prefix secrets during publish ([#852](https://github.com/mschreib28/cli-printing-press/issues/852)) ([8cf5459](https://github.com/mschreib28/cli-printing-press/commit/8cf5459c947eacb00a94b9fae465ac761d7dc4ff))
+* **cli:** emit form-encoded request bodies ([#947](https://github.com/mschreib28/cli-printing-press/issues/947)) ([48cc2a3](https://github.com/mschreib28/cli-printing-press/commit/48cc2a31b172328d6f6a314014553c3f8e981eb3))
+* **cli:** emit multipart requests for upload endpoints ([#904](https://github.com/mschreib28/cli-printing-press/issues/904)) ([fc291ca](https://github.com/mschreib28/cli-printing-press/commit/fc291cae1938593d86e4abac349a9a2117ced0a0))
+* **cli:** fold per-spec base URL path prefixes on multi-spec merge ([#995](https://github.com/mschreib28/cli-printing-press/issues/995)) ([6e086c0](https://github.com/mschreib28/cli-printing-press/commit/6e086c00773dd0e17c088f222d1fda785ad5644e))
+* **cli:** force UTF-8 stdio in verify-skill Python subprocess ([#985](https://github.com/mschreib28/cli-printing-press/issues/985)) ([cb1697e](https://github.com/mschreib28/cli-printing-press/commit/cb1697ed2fcc914b9f53592ba2b2f65ff7de6488)), closes [#976](https://github.com/mschreib28/cli-printing-press/issues/976) [#819](https://github.com/mschreib28/cli-printing-press/issues/819)
+* **cli:** handle empty sync pages ([#903](https://github.com/mschreib28/cli-printing-press/issues/903)) ([d94d89d](https://github.com/mschreib28/cli-printing-press/commit/d94d89dc6d8aec8c55212e9907a3543b4e61a94d))
+* **cli:** infer resource-prefixed IDField from item-schema properties ([#938](https://github.com/mschreib28/cli-printing-press/issues/938)) ([6cd57cc](https://github.com/mschreib28/cli-printing-press/commit/6cd57cc2bb3ec0b728cff7584aa98acfec24f783))
+* **cli:** isolate generic resources by type ([#901](https://github.com/mschreib28/cli-printing-press/issues/901)) ([ff75531](https://github.com/mschreib28/cli-printing-press/commit/ff7553169890c8517bd174b0eef90cebbca010db))
+* **cli:** preserve hand-edits to templated files on --force regen ([#967](https://github.com/mschreib28/cli-printing-press/issues/967)) ([618fa45](https://github.com/mschreib28/cli-printing-press/commit/618fa45627609eff27a103bfc91ee28783e128a6))
+* **cli:** preserve internal sibling packages on force regen ([#897](https://github.com/mschreib28/cli-printing-press/issues/897)) ([dceb6e5](https://github.com/mschreib28/cli-printing-press/commit/dceb6e58f1bce60ea2228c7169eb590228b6c591))
+* **cli:** reject reserved placeholder hosts in spec validation ([#984](https://github.com/mschreib28/cli-printing-press/issues/984)) ([5f8dae1](https://github.com/mschreib28/cli-printing-press/commit/5f8dae13e1984d46a2bd7f9bf3bf83279fa4c8d6)), closes [#818](https://github.com/mschreib28/cli-printing-press/issues/818)
+* **cli:** route explicit --csv/--quiet/--plain above piped-pipe gate ([#968](https://github.com/mschreib28/cli-printing-press/issues/968)) ([ab6edbe](https://github.com/mschreib28/cli-printing-press/commit/ab6edbefb709697a129a42668a16a31c04749bcf)), closes [#918](https://github.com/mschreib28/cli-printing-press/issues/918)
+* **cli:** seed template-var placeholders in verify mode ([#934](https://github.com/mschreib28/cli-printing-press/issues/934)) ([a1d39bf](https://github.com/mschreib28/cli-printing-press/commit/a1d39bf3e649ceff452a7b049e95c7d86d898680)), closes [#893](https://github.com/mschreib28/cli-printing-press/issues/893)
+* **generator:** route receiver JSON helper through filters ([#933](https://github.com/mschreib28/cli-printing-press/issues/933)) ([e952e80](https://github.com/mschreib28/cli-printing-press/commit/e952e80794ac828dd2a35ff0db7ce91b834cb56c))
+* **skills:** forward --research-dir to scorecard --live-check in mid-pipeline polish ([#980](https://github.com/mschreib28/cli-printing-press/issues/980)) ([e0240ce](https://github.com/mschreib28/cli-printing-press/commit/e0240ceae66362d78ebf2097bbd66cedf155250a))
+* **skills:** preflight Go toolchain before generation runs ([#973](https://github.com/mschreib28/cli-printing-press/issues/973)) ([0562bca](https://github.com/mschreib28/cli-printing-press/commit/0562bca80e8588b02130edeec8dab7d0a3b1ec1d))
+
 ## [4.2.2](https://github.com/mvanhorn/cli-printing-press/compare/v4.2.1...v4.2.2) (2026-05-09)
 
 
